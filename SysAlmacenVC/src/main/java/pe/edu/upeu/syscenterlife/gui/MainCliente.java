@@ -18,14 +18,13 @@ import org.springframework.stereotype.Component;
 import pe.edu.upeu.syscenterlife.modelo.Cliente;
 import pe.edu.upeu.syscenterlife.servicio.ClienteService;
 
-
 @Component
 public class MainCliente extends javax.swing.JPanel {
 
     DefaultTableModel modelo;
     ConfigurableApplicationContext ctx;
     @Autowired
-    ClienteService clienteService ;
+    ClienteService clienteService;
     TableRowSorter<TableModel> trsfiltro;
 
     enum TIPOCLXIENTE {
@@ -39,12 +38,12 @@ public class MainCliente extends javax.swing.JPanel {
         }
         
     }
+
     public void setContexto(ConfigurableApplicationContext ctx){
         this.ctx=ctx;
         listarClientes();
-                
     }
-
+    
     public void listarClientes() {
         List<Cliente> listarCleintes = clienteService.listarEntidad();
         if (listarCleintes != null) {
