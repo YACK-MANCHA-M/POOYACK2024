@@ -1,6 +1,5 @@
 package pe.edu.upeu.syscenterlife.servicio;
 
-import static java.lang.Math.log;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
@@ -13,8 +12,8 @@ import pe.edu.upeu.syscenterlife.util.ErrorLogger;
 
 @Service
 public class ClienteService {
-    ErrorLogger log=new ErrorLogger("clienteService.class");
-
+    ErrorLogger log=new ErrorLogger("ClienteService.class");
+    
     @Autowired
     ClienteRepository clienteRepository;
 
@@ -63,6 +62,6 @@ public class ClienteService {
             log.log(Level.SEVERE, "create", e);
         }
         return listarclientes;
-
     }
+
 }

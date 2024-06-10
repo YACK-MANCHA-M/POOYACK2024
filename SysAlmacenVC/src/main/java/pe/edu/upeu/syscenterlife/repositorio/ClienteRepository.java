@@ -16,4 +16,5 @@ public interface ClienteRepository extends
 
     @Query(value = "SELECT c.* FROM Cliente c WHERE c.nombrers like :filter", nativeQuery = true)
     List<Cliente> listAutoCompletCliente(@Param("filter") String filter);
+
 }

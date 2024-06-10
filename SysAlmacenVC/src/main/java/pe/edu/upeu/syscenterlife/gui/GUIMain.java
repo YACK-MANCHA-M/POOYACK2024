@@ -163,7 +163,7 @@ public class GUIMain extends JFrame {
             }
             if (((JMenuItem) e.getSource()).getName().equals("miareaperiodo")) {
                 System.out.println("Si llega!");
-                 jtpane.removeAll();
+                jtpane.removeAll();
                 //MainCliente mc = new MainCliente();
                 MainVenta mc = ctx.getBean(MainVenta.class);
                 mc.setContexto(ctx);

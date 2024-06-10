@@ -43,6 +43,6 @@ public class UsuarioService {
 
     public Usuario buscarUsuario(String user) {
         return repository.buscarUsuario(user);
-
     }
+
 }
